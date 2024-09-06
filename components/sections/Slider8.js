@@ -18,9 +18,6 @@ export default function Slider8() {
                         <li className="item-title">
                           <span className="inner">Rent</span>
                         </li>
-                        <li className="item-title">
-                          <span className="inner">Sell</span>
-                        </li>
                       </ul>
                       <div className="widget-content-tab">
                         <div className="widget-content-inner active">

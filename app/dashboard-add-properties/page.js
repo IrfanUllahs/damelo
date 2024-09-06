@@ -72,30 +72,6 @@ export default function DashboardAddProperties() {
                     required
                   />
                 </fieldset>
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    List
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    Grid
-                  </option>
-                  <option data-value="Sold" className="option">
-                    Single
-                  </option>
-                </select>
-              </div>
-              <div className="cols cols-two">
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    List
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    Grid
-                  </option>
-                  <option data-value="Sold" className="option">
-                    Single
-                  </option>
-                </select>
                 <fieldset className="text">
                   <input
                     type="text"
@@ -108,78 +84,7 @@ export default function DashboardAddProperties() {
                   />
                 </fieldset>
               </div>
-              <div className="cols cols-two">
-                <fieldset className="text">
-                  <input
-                    type="text"
-                    placeholder="Material"
-                    className
-                    name="text"
-                    tabIndex={2}
-                    aria-required="true"
-                    required
-                  />
-                </fieldset>
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    1
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    2
-                  </option>
-                  <option data-value="Sold" className="option">
-                    3
-                  </option>
-                </select>
-              </div>
-              <div className="cols cols-two">
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    1
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    2
-                  </option>
-                  <option data-value="Sold" className="option">
-                    3
-                  </option>
-                </select>
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    1
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    2
-                  </option>
-                  <option data-value="Sold" className="option">
-                    3
-                  </option>
-                </select>
-              </div>
-              <div className="cols cols-two">
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    1
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    2
-                  </option>
-                  <option data-value="Sold" className="option">
-                    3
-                  </option>
-                </select>
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    1
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    2
-                  </option>
-                  <option data-value="Sold" className="option">
-                    3
-                  </option>
-                </select>
-              </div>
+
               <div className="cols cols-two">
                 <fieldset className="text">
                   <input
