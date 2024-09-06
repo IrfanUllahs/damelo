@@ -1,0 +1,27 @@
+version: 1
+applications:
+  - appRoot: src
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm install
+        build:
+          commands:
+            - npm run build
+        postBuild:
+          commands:
+            - npm run export
+      artifacts:
+        baseDirectory: .next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+          - .next/cache/**/*
+    backend:
+      phases:
+        build:
+          commands:
+            - npm run deploy
