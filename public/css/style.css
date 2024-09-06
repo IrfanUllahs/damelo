@@ -12,7 +12,7 @@
 }
 
 /**
-  * Name: JustHome - Real Estate HTML Template
+  * Name: Demelo Real Estate - Real Estate HTML Template
   * Version: 1.0.1
   * Author: Themesflat
   * Author URI: http://www.themesflat.com
@@ -16009,6 +16009,9 @@ a {
 .leaflet-popup-content {
   width: 100% !important;
   margin: 0px !important;
+}
+.nav-bar-logo {
+  width: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -595,7 +595,7 @@ export default function PropertySingleV() {
                         <div className="name">
                           <Link href="/#">Jane Cooper</Link>
                         </div>
-                        <p>sale@justhome.com</p>
+                        <p>sale@Demelo Real Estate.com</p>
                         <p>3-596 95 38 12</p>
                       </div>
                     </div>

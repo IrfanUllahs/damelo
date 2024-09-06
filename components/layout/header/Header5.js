@@ -24,8 +24,8 @@ export default function Header5({
               <Link href="/" rel="home">
                 <img
                   id="logo-header"
-                  className="d-block"
-                  src="/images/logo/logo-blue.svg"
+                  className="d-block nav-bar-logo"
+                  src="/images/logo/logo.png"
                   alt=""
                 />
               </Link>

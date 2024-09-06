@@ -61,7 +61,7 @@ export default function AgentList() {
 													<div className="name">
 														<Link href="/agent-single">Jane Cooper</Link>
 													</div>
-													<p>sale@justhome.com</p>
+													<p>sale@Demelo Real Estate.com</p>
 													<p>3-596 95 38 12</p>
 												</div>
 											</li>
@@ -73,7 +73,7 @@ export default function AgentList() {
 													<div className="name">
 														<Link href="/agent-single">Marvin McKinney</Link>
 													</div>
-													<p>sale@justhome.com</p>
+													<p>sale@Demelo Real Estate.com</p>
 													<p>3-596 95 38 12</p>
 												</div>
 											</li>
@@ -85,7 +85,7 @@ export default function AgentList() {
 													<div className="name">
 														<Link href="/agent-single">Cameron Williamson</Link>
 													</div>
-													<p>sale@justhome.com</p>
+													<p>sale@Demelo Real Estate.com</p>
 													<p>3-596 95 38 12</p>
 												</div>
 											</li>

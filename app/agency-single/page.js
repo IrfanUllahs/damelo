@@ -506,7 +506,7 @@ export default function AgencySingle() {
 											</li>
 											<li>
 												<div className="title">Web:</div>
-												<p>justhome.com</p>
+												<p>Demelo Real Estate.com</p>
 											</li>
 											<li>
 												<div className="title">Licenses:</div>
