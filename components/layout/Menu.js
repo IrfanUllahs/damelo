@@ -27,23 +27,12 @@ export default function Menu() {
         <li
           className={`has-children ${checkParentActive([
             "/property-list-v1",
-            "/property-map-v1",
-            "/property-map-v2",
-            "/property-map-v3",
+
             "/property-map-v4",
             "/property-list-v2",
             "/property-list-v3",
-            "/property-grid-v1",
-            "/property-grid-v2",
             "/property-grid-v3",
-            "/property-grid-v4",
             "/property-single-v1",
-            "/property-single-v2",
-            "/property-single-v3",
-            "/property-single-v4",
-            "/property-single-v5",
-            "/property-single-v6",
-            "/property-single-v7",
           ])}`}
         >
           <a>Property</a>

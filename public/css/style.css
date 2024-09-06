@@ -6382,7 +6382,7 @@ ul.grid-tags li a:hover {
 }
 .slider.home8 .wrap-slider {
   position: relative;
-  background-image: url(./../images/slider/slider-home-8.jpg);
+  background-image: url(../images/hero/bgImage.jpeg);
   border-radius: 24px;
 }
 .slider.home8 .wrap-slider .slider-item {
@@ -10857,6 +10857,9 @@ body::-webkit-scrollbar {
 .property-map-wrap-v4 .list-box-dream .box-dream .image {
   width: 258px;
   height: 222px;
+}
+.property-single-wrap.single-v1 {
+  padding-top: 90px;
 }
 
 .property-single-wrap.v2 .head-title {
