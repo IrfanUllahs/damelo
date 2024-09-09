@@ -3562,10 +3562,10 @@ ul.grid-tags li a:hover {
   color: var(--White);
 }
 .ft-download.bg-fourth li a {
-  background-color: var(--Fourth);
+  background-color: var(--buttoncolor);
 }
 .ft-download.bg-fourth li a .icon {
-  background-color: var(--Fourth) !important;
+  background-color: var(--buttoncolor) !important;
   color: var(--White);
 }
 .ft-download.bg-fourth li a .app::before {
@@ -8644,7 +8644,7 @@ form.form-style-fourth input::placeholder {
   color: var(--Fourth);
 }
 form.form-style-fourth .button-submit button {
-  background-color: var(--Fourth);
+  background-color: var(--buttoncolor);
   color: var(--White);
 }
 
@@ -9318,7 +9318,7 @@ body::-webkit-scrollbar {
   form
   .button-submit
   button {
-  background-color: var(--Fourth);
+  background-color: var(--buttoncolor);
   color: var(--White);
 }
 .footer.bg-white .footer-inner .footer-inner-wrap .center-footer .icon {
@@ -16013,6 +16013,9 @@ a {
 }
 .nav-bar-logo {
   width: 150px;
+}
+.tf-button-bg-custom {
+  background-color: #67c2c9;
 }
 @media only screen and (max-width: 700px) {
   .preload-container .middle {

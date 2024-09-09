@@ -30,7 +30,7 @@ export default function Header5({
                 />
               </Link>
             </div>
-            <nav className="main-menu style-blue">
+            <nav className="main-menu ">
               <Menu />
             </nav>
             <div className="header-right">
