@@ -1,0 +1,18 @@
+//settings
+$font-main-family: "Roboto", sans-serif;
+$font-secondary: "DM Sans", sans-serif;
+$jost: "Jost", sans-serif;
+$fontIcon: "flaticon";
+
+:root {
+  --White: #fff;
+  --Text: #3d3e3f;
+  --Primary: #e7c873;
+  --Secondary: #1a1a1a;
+  --Third: #eb664e;
+  --Fourth: #1f4b43;
+  --Border: #ebebeb;
+  --roboto: $font-main-family;
+  --dm: $font-secondary;
+  --jost: $jost;
+}
