@@ -5562,7 +5562,7 @@ ul.grid-tags li a:hover {
 }
 
 .flat-title {
-  padding-top: 90px;
+  padding-top: 220px;
   padding-bottom: 94px;
   position: relative;
   z-index: 20;
@@ -7009,15 +7009,15 @@ ul.grid-tags li a:hover {
   background-color: #fff;
 }
 .preload-container .middle {
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 25%;
   position: absolute;
   z-index: 100;
   margin: -15px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  content: url(./../images/favicon.png);
+  content: url(./../images/logo/logo.png);
   animation: preload 1.2s linear infinite alternate;
 }
 
@@ -16013,5 +16013,12 @@ a {
 .nav-bar-logo {
   width: 150px;
 }
-
+@media only screen and (max-width: 700px) {
+  .preload-container .middle {
+    height: 80%;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

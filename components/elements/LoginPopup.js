@@ -18,7 +18,10 @@ export default function LoginPopup({ isLogin, handleRegister, handleLogin }) {
               <i className="icon-close" />
             </a>
             <div className="image-left">
-              <img src="/images/section/login.jpg" alt="" />
+              <img
+                src="https://images.pexels.com/photos/1212053/pexels-photo-1212053.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
               <h3>Welcome to Your Real Estate Website</h3>
             </div>
             <div className="content-right">
