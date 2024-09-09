@@ -5,6 +5,7 @@
   --Secondary: #1a1a1a;
   --Third: #eb664e;
   --Fourth: #291f4b;
+  --buttoncolor: #67c2c9;
   --Border: #ebebeb;
   --roboto: $font-main-family;
   --dm: $font-secondary;
@@ -6443,7 +6444,7 @@ ul.grid-tags li a:hover {
   button {
   border-radius: 12px;
   color: var(--White);
-  background-color: var(--Secondary);
+  background-color: var(--buttoncolor);
 }
 .slider.home8 .wrap-slider .counter {
   position: absolute;
@@ -8028,7 +8029,7 @@ ul.grid-tags li a:hover {
   background-color: rgba(217, 183, 90, 0.0509803922);
 }
 .tf-button-primary.style-black {
-  background-color: var(--Secondary);
+  background-color: var(--buttoncolor);
   color: var(--White);
 }
 .tf-button-primary.style-black.active,
@@ -12520,7 +12521,7 @@ body::-webkit-scrollbar {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
-  background-color: var(--Secondary);
+  background-color: var(--buttoncolor);
   color: var(--White);
   cursor: pointer;
   -webkit-transition: all 0.3s ease;

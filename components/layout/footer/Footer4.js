@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer4() {
   return (
     <>
@@ -5,14 +7,15 @@ export default function Footer4() {
         <div className="footer-inner">
           <div className="footer-inner-wrap">
             <div className="top-footer">
-              <div className="logo-footer">
-                <a href="index.html">
+              <div className="logo-footer w-25">
+                <Link href="/">
                   <img
                     id="logo-footer"
-                    src="images/logo/logo.svg"
+                    src="images/logo/logo.png"
                     alt="images"
+                    className="w-full h-full"
                   />
-                </a>
+                </Link>
               </div>
               <div className="wg-social style-black">
                 <span>Follow Us</span>
@@ -70,22 +73,22 @@ export default function Footer4() {
                 <div className="ft-title">Discover</div>
                 <ul className="navigation-menu-footer">
                   <li>
-                    <a href="property-map-v1.html">Miami</a>
+                    <Link href="/">Miami</Link>
                   </li>
                   <li>
-                    <a href="property-map-v1.html">New York</a>
+                    <Link href="/">New York</Link>
                   </li>
                   <li>
-                    <a href="property-map-v1.html">Chicago</a>
+                    <Link href="/">Chicago</Link>
                   </li>
                   <li>
-                    <a href="property-map-v1.html">Sacramento</a>
+                    <Link href="/">Sacramento</Link>
                   </li>
                   <li>
-                    <a href="#">Los Angeles</a>
+                    <Link href="/">Los Angeles</Link>
                   </li>
                   <li>
-                    <a href="#">San Francisco</a>
+                    <Link href="/">San Francisco</Link>
                   </li>
                 </ul>
               </div>
@@ -93,25 +96,25 @@ export default function Footer4() {
                 <div className="ft-title">Quick Links</div>
                 <ul className="navigation-menu-footer">
                   <li>
-                    <a href="about.html">About</a>
+                    <Link href="/about">About</Link>
                   </li>
                   <li>
-                    <a href="contact.html">Contact</a>
+                    <Link href="/contact">Contact</Link>
                   </li>
                   <li>
-                    <a href="faq.html">Faq</a>
+                    <Link href="/faq">Faq</Link>
                   </li>
                   <li>
-                    <a href="blog-list-v1.html">Blog</a>
+                    <Link href="/">Blog</Link>
                   </li>
                   <li>
-                    <a href="pricing.html">Pricing Plans</a>
+                    <Link href="/">Pricing Plans</Link>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <Link href="/">Privacy Policy</Link>
                   </li>
                   <li>
-                    <a href="#">Terms &amp; Conditions</a>
+                    <Link href="">Terms &amp; Conditions</Link>
                   </li>
                 </ul>
               </div>

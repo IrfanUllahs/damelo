@@ -108,12 +108,12 @@ export default function Layout({
 
             {children}
           </div>
-          {footerStyle == 1 ? <Footer1 footerCls={footerCls} /> : null}
-          {footerStyle == 2 ? <Footer2 footerCls={footerCls} /> : null}
-          {footerStyle == 3 ? <Footer3 footerCls={footerCls} /> : null}
+          {/* {footerStyle == 1 ? <Footer1 footerCls={footerCls} /> : null} */}
+          {/* {footerStyle == 2 ? <Footer2 footerCls={footerCls} /> : null} */}
+          {/* {footerStyle == 3 ? <Footer3 footerCls={footerCls} /> : null} */}
           {footerStyle == 4 ? <Footer4 footerCls={footerCls} /> : null}
-          {footerStyle == 5 ? <Footer5 footerCls={footerCls} /> : null}
-          {footerStyle == 6 ? <Footer6 footerCls={footerCls} /> : null}
+          {/* {footerStyle == 5 ? <Footer5 footerCls={footerCls} /> : null} */}
+          {/* {footerStyle == 6 ? <Footer6 footerCls={footerCls} /> : null} */}
         </div>
       </div>
       <MobileMenu
