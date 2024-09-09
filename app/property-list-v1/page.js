@@ -5,7 +5,7 @@ export default function PropertyListV1() {
   return (
     <>
       <Layout headerStyle={12} footerStyle={1}>
-        <div className="flat-title">
+        <div className="flat-title  ">
           <div className="themesflat-container full">
             <div className="row">
               <div className="col-12">
