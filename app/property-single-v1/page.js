@@ -1,8 +1,13 @@
+"use client";
 import ChartList from "@/components/chart/ChartList";
 import VideoPopup from "@/components/elements/VideoPopup";
 import Layout from "@/components/layout/Layout";
 import SliderBoxDream from "@/components/slider/SliderBoxDream";
 import Link from "next/link";
+import { FaImage } from "react-icons/fa";
+import { IoVideocamOutline } from "react-icons/io5";
+import { FiMapPin } from "react-icons/fi";
+
 export default function PropertySingleV() {
   return (
     <>
@@ -31,81 +36,44 @@ export default function PropertySingleV() {
                       </div>
                       <p>Save</p>
                     </div>
-                    <div className="item">
-                      <div className="icon">
-                        <i className="flaticon-before-after" />
-                      </div>
-                      <p>Compare</p>
-                    </div>
+
                     <div className="item">
                       <div className="icon">
                         <i className="flaticon-outbox" />
                       </div>
                       <p>Share</p>
                     </div>
-                    <div className="item">
-                      <div className="icon">
-                        <i className="flaticon-tools-and-utensils" />
-                      </div>
-                      <p>Print</p>
-                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-12">
-                <div className="wrap-gallery-image">
-                  <div className="list-tags type-1">
-                    <Link href="/#" className="tags-item for-sell">
-                      FOR RENT
+              <div className="imageBox">
+                {" "}
+                <Link href="/images/43434">
+                  <img
+                    src="/images/house/property-detail-1.jpg"
+                    className="w-full h-full "
+                    alt=""
+                  />{" "}
+                  <div className="mediaLinks">
+                    <Link href="/images/23232">
+                      <p>
+                        {" "}
+                        <FaImage />
+                      </p>
                     </Link>
-                    <Link href="/#" className="tags-item featured">
-                      FEATURED
+                    <Link href="/video/2323">
+                      <p>
+                        <IoVideocamOutline />
+                      </p>
+                    </Link>
+                    <Link href="/map/3234">
+                      {" "}
+                      <p>
+                        <FiMapPin />
+                      </p>
                     </Link>
                   </div>
-                  <Link
-                    href="/images/house/property-detail-1.jpg"
-                    className="item-1"
-                    data-fancybox="gallery"
-                  >
-                    <img src="/images/house/property-detail-1.jpg" alt="" />
-                  </Link>
-                  <Link
-                    href="/images/house/property-detail-2.jpg"
-                    className="item-2"
-                    data-fancybox="gallery"
-                  >
-                    <img src="/images/house/property-detail-2.jpg" alt="" />
-                  </Link>
-                  <Link
-                    href="/images/house/property-detail-3.jpg"
-                    className="item-3"
-                    data-fancybox="gallery"
-                  >
-                    <img src="/images/house/property-detail-3.jpg" alt="" />
-                  </Link>
-                  <Link
-                    href="/images/house/property-detail-4.jpg"
-                    className="item-4"
-                    data-fancybox="gallery"
-                  >
-                    <img src="/images/house/property-detail-4.jpg" alt="" />
-                  </Link>
-                  <Link
-                    href="/images/house/property-detail-5.jpg"
-                    className="item-5"
-                    data-fancybox="gallery"
-                  >
-                    <img src="/images/house/property-detail-5.jpg" alt="" />
-                  </Link>
-                  <Link
-                    href="/images/house/property-detail-3.jpg"
-                    className="more-photos"
-                    data-fancybox="gallery"
-                  >
-                    <i className="flaticon-gallery" />
-                    <p>42 Photos</p>
-                  </Link>
-                </div>
+                </Link>
               </div>
               <div className="col-xl-8">
                 <div className="content-wrap">
@@ -713,45 +681,26 @@ export default function PropertySingleV() {
                       referrerPolicy="no-referrer-when-downgrade"
                     />
                   </div>
-                  <div className="tour">
-                    <h4 className="wow fadeInUp">360° Virtual Tour</h4>
-                    <div className="image-group relative">
-                      <img src="/images/image-box/img-virtual-1.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div className="page-views">
-                    <h4 className="wow fadeInUp">Property Views</h4>
-                    <div className="area-chart">
-                      <ChartList tstyle={1} />
-                    </div>
-                  </div>
-                  <div className="walk-score">
-                    <h4 className="wow fadeInUp">Walk Score</h4>
-                    <div className="wrap-walk-score">
-                      <div className="walk-score-item wow fadeInUp">
-                        <div className="icon">
-                          <i className="flaticon-walk" />
-                        </div>
-                        <div>
-                          <div className="title">Walk Score®</div>
-                          <p>96 / 100</p>
-                          <p>Walker's Paradise</p>
-                        </div>
-                      </div>
-                      <div
-                        className="walk-score-item wow fadeInUp"
-                        data-wow-delay="0.1s"
-                      >
-                        <div className="icon">
-                          <i className="flaticon-bike" />
-                        </div>
-                        <div>
-                          <div className="title">Bike Score®</div>
-                          <p>96 / 100</p>
-                          <p>Bikeable</p>
-                        </div>
-                      </div>
-                    </div>
+
+                  {/* statistics */}
+                  <div className="statistics-card">
+                    <h3>Statistics</h3>
+
+                    <ul>
+                      <li>
+                        <strong>6685</strong>
+                        <p> visits</p>
+                      </li>
+                      <li>
+                        <strong>4</strong> <p>Send to friends</p>
+                      </li>
+                      <li>
+                        <strong>9</strong> <p>email contacts</p>
+                      </li>
+                      <li>
+                        <strong>174</strong> <p>times saved as favorite</p>
+                      </li>
+                    </ul>
                   </div>
                   <div className="nearby">
                     <h4 className="wow fadeInUp">What's Nearby?</h4>

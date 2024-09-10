@@ -1,11 +1,12 @@
 :root {
   --White: #fff;
   --Text: #3d3e3f;
-  --Primary: #e7c873;
+  --Primary: #67c2c9;
   --Secondary: #1a1a1a;
   --Third: #eb664e;
   --Fourth: #291f4b;
   --buttoncolor: #67c2c9;
+  --buttonhover: #abe6eb;
   --Border: #ebebeb;
   --roboto: $font-main-family;
   --dm: $font-secondary;
@@ -7956,7 +7957,7 @@ ul.grid-tags li a:hover {
   gap: 10px;
   padding: 9px 12px;
   border-radius: 8px;
-  background-color: var(--Fourth);
+  background-color: var(--buttoncolor);
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
@@ -7983,7 +7984,7 @@ ul.grid-tags li a:hover {
   padding: 18px 26px;
   border-radius: 12px;
   border: 0;
-  background-color: #e7c873;
+  background-color: var(--buttoncolor);
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
@@ -7999,7 +8000,7 @@ ul.grid-tags li a:hover {
 }
 .tf-button-primary.active,
 .tf-button-primary:hover {
-  background-color: #d9b75a;
+  background-color: var(--buttonhover);
   color: var(--Secondary);
 }
 .tf-button-primary.active i,
@@ -16026,12 +16027,96 @@ a {
     left: 10%;
   }
 }
+/* Container styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Increment-Decrement Buttons */
 .input-group {
   display: flex;
+
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* gap: 5px; */
 }
+
 .input-group button {
-  background-color: grey;
+  background-color: #a8afa9; /* Adjust the color to your primary theme */
+  color: white;
+  border: none;
+  /* width: 35px; */
+  /* height: 35px; */
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.input-group button:hover {
+  background-color: #d3dbd4; /* Darken on hover */
+}
+
+.input-group input {
+  width: 50px;
+  /* height: 35px; */
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #39db4a;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #39db4a; /* Accent color for radio buttons */
+}
+
+/* Styling the form section */
+.form-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+  width: 100%;
+}
+
+.form-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
 /* Responsive styles */
 @media (max-width: 480px) {
   .input-group input {
@@ -16052,4 +16137,92 @@ a {
   gap: 10px;
 }
 
+.statistics-card {
+  margin: 40px 0;
+}
+
+.statistics-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.statistics-card ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.statistics-card ul li strong {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+.imageBox {
+  height: 450px;
+  width: 900px;
+  margin: 90px auto;
+  border-radius: 40px;
+}
+.imageBox img {
+  border-radius: 30px;
+}
+.mediaLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+.mediaLinks p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.mediaLinks p:hover {
+  color: var(--buttoncolor);
+}
 /*# sourceMappingURL=style.css.map */
+.search {
+  min-height: 100vh;
+  border: 2px solid red;
+  max-width: 1400px;
+  padding: 0 14px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.search-contents {
+  height: 100%;
+  width: 100%;
+  border: 2px solid yellow;
+}
+.search-contents h3 {
+  margin-bottom: 30px;
+}
+.cardArea {
+  display: flex;
+}
+.leftSection {
+  flex: 1;
+  border: 2px solid red;
+}
+.rightSection {
+  flex: 3;
+  border: 2px solid wheat;
+}
+.cardContents {
+  display: flex;
+}
+.cardImage {
+  flex: 2;
+}
+.cardInfo {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 992px) {
+  .search {
+    padding-top: 150px;
+  }
+}
