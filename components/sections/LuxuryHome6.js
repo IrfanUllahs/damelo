@@ -17,7 +17,7 @@ export default function LuxuryHome6() {
 									</div>
 									<div>
 										<p>Total Clients</p>
-										<h4>7,000 M</h4>
+										<h4>9,000 M</h4>
 									</div>
 								</div>
 							</div>
