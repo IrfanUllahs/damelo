@@ -6959,7 +6959,7 @@ ul.grid-tags li a:hover {
   -webkit-transition: all 300ms linear;
   -o-transition: all 300ms linear;
   transition: all 300ms linear;
-  background: var(--Secondary);
+  background: #67c2c9;
 }
 .progress-wrap::after {
   position: absolute;
@@ -7049,6 +7049,7 @@ ul.grid-tags li a:hover {
 #header_main .header-inner .header-inner-wrap #site-logo #logo-header-mobile {
   display: none;
 }
+
 #header_main .header-inner .header-inner-wrap .main-menu ul.navigation {
   display: -webkit-box;
   display: -moz-box;
@@ -7059,7 +7060,9 @@ ul.grid-tags li a:hover {
   justify-content: center;
   gap: 40px;
   margin-left: 197px;
+
 }
+
 #header_main .header-inner .header-inner-wrap .main-menu ul.navigation > li {
   position: relative;
 }
@@ -7070,7 +7073,14 @@ ul.grid-tags li a:hover {
   ul.navigation
   > li
   > a {
-  line-height: 100px;
+    line-height: 100px;
+    font-size: larger;
+    font-weight: bold;
+    color: #050b20;
+    font-weight: 700;
+    padding-left: 15px;
+        /* color: var(--buttoncolor); */
+  
 }
 #header_main
   .header-inner
@@ -7334,6 +7344,7 @@ ul.grid-tags li a:hover {
   i {
   font-size: 20px;
   color: var(--Secondary);
+  
 }
 #header_main
   .header-inner
@@ -7345,6 +7356,7 @@ ul.grid-tags li a:hover {
   font-weight: 500;
   line-height: 19px;
   color: var(--Secondary);
+  
 }
 #header_main
   .header-inner
@@ -7362,6 +7374,7 @@ ul.grid-tags li a:hover {
   .icon
   i {
   color: var(--White);
+  
 }
 #header_main
   .header-inner
@@ -7390,21 +7403,23 @@ ul.grid-tags li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--Secondary);
+  border: 2px solid var(--buttoncolor);
   border-radius: 50%;
   cursor: pointer;
   flex-shrink: 0;
 }
 #header_main .header-inner .header-inner-wrap .header-right .header-user i {
-  font-size: 16px;
-  color: var(--Secondary);
+  font-size: 18px;
+  color: var( --buttoncolor);
+  font-weight: bold; 
+  
 }
 #header_main
   .header-inner
   .header-inner-wrap
   .header-right
   .header-user.style-white {
-  border-color: var(--White);
+  border-color: var( --buttoncolor);
 }
 #header_main
   .header-inner
@@ -7420,7 +7435,9 @@ ul.grid-tags li a:hover {
   .header-inner-wrap
   .header-right
   .header-user.style-blue {
-  border-color: var(--Fourth);
+  border-color: var( --buttoncolor);
+  background-color: white;
+  
 }
 #header_main
   .header-inner
@@ -7431,6 +7448,28 @@ ul.grid-tags li a:hover {
   i {
   color: var(--Fourth);
 }
+
+/* Existing styles */
+
+/* Hover effects of header profile icon */
+#header_main .header-inner .header-inner-wrap .header-right .header-user:hover {
+  background-color: var(--buttoncolor);
+  border-color: var(--buttoncolor);
+}
+
+#header_main .header-inner .header-inner-wrap .header-right .header-user:hover i {
+  color: var(--White);
+}
+
+#header_main .header-inner .header-inner-wrap .header-right .header-user.style-blue:hover {
+  background-color: var(--buttoncolor);
+  border-color: var(--buttoncolor);
+}
+
+#header_main .header-inner .header-inner-wrap .header-right .header-user.style-blue:hover i {
+  color: var(--White);
+}
+
 #header_main .header-inner .header-inner-wrap .header-right .header-user-login {
   display: -webkit-box;
   display: -moz-box;
