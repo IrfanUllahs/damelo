@@ -11,7 +11,7 @@ export default function DashboardAddProperties() {
       >
         <div>
           <div className="wg-box pl-44 mb-20">
-            <h4>Bacsic Infomation</h4>
+            <h4>Basic Infomation</h4>
             <form className="form-bacsic-infomation flex gap30 flex-column">
               <fieldset className="text has-top-title">
                 <input
@@ -25,17 +25,44 @@ export default function DashboardAddProperties() {
                 />
                 <label htmlFor>Property Title *</label>
               </fieldset>
-              <select className="nice-select" tabIndex={0}>
-                <option data-value className="option selected">
-                  List
-                </option>
-                <option data-value="For Ren" className="option">
-                  Grid
-                </option>
-                <option data-value="Sold" className="option">
-                  Single
-                </option>
-              </select>
+              <fieldset className="text has-top-title">
+                <input
+                  type="text"
+                  placeholder="Your Email *"
+                  className
+                  name="text"
+                  tabIndex={2}
+                  aria-required="true"
+                  required
+                />
+                <label htmlFor>Your Email *</label>
+              </fieldset>
+              <fieldset className="text has-top-title">
+                <input
+                  type="text"
+                  placeholder="Your Name *"
+                  className
+                  name="text"
+                  tabIndex={2}
+                  aria-required="true"
+                  required
+                />
+                <label htmlFor>Your Name *</label>
+              </fieldset>
+
+              <fieldset className="text has-top-title">
+                <input
+                  type="text"
+                  placeholder="Phone Number *"
+                  className
+                  name="text"
+                  tabIndex={2}
+                  aria-required="true"
+                  required
+                />
+                <label htmlFor>Phone Number *</label>
+              </fieldset>
+
               <fieldset className="description has-top-title">
                 <textarea
                   name="description"
@@ -133,8 +160,8 @@ export default function DashboardAddProperties() {
           </div>
           <div className="wg-box pl-44 mb-20">
             <h4>Choose the type of property</h4>
-            <form className="form-energy flex gap30 flex-column">
-              <div className="cols">
+            <form className="flex flex-column">
+              <div className=" flex  justify-between gap-5">
                 <select className="nice-select" tabIndex={0}>
                   <option data-value className="option selected">
                     Rooms
@@ -161,7 +188,6 @@ export default function DashboardAddProperties() {
                     Local or Warehouse
                   </option>
                 </select>
-                {/* this is for sale or rent  */}
                 <div className="flex items-center justify-center gap-5">
                   <label className="flex items-center justify-center gap-3">
                     <input
@@ -183,6 +209,52 @@ export default function DashboardAddProperties() {
                   </label>
                 </div>
               </div>
+              <div className="form-section  ">
+                <div className="form-group">
+                  <h4>Number of rooms in the house</h4>
+                  <div className="input-group">
+                    <button>-</button>
+                    <input type="text" value="1" />
+                    <button>+</button>
+                  </div>
+                </div>
+
+                <div className="form-group">
+                  <h4>Number of bathrooms and toilets</h4>
+                  <div className="input-group">
+                    <button>-</button>
+                    <input type="text" value="1" />
+                    <button>+</button>
+                  </div>
+                </div>
+
+                <div className="form-group">
+                  <h4>Facade of the building</h4>
+                  <div className="radio-group">
+                    <label>
+                      <input type="radio" name="facade" /> Abroad
+                    </label>
+                    <label>
+                      <input type="radio" name="facade" /> Inside
+                    </label>
+                  </div>
+                </div>
+
+                <div className="form-group">
+                  <h4>Does it have an elevator?</h4>
+                  <div className="radio-group">
+                    <label>
+                      <input type="radio" name="elevator" /> Yes it has
+                    </label>
+                    <label>
+                      <input type="radio" name="elevator" /> Does not have
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              {/* this is for sale or rent  */}
+
               <div className="button-submit mt-10">
                 <button className="tf-button-primary" type="submit">
                   Save &amp; Preview
@@ -251,24 +323,14 @@ export default function DashboardAddProperties() {
             </form>
           </div>
           <div className="wg-box pl-44 mb-20">
-            <h4>Location</h4>
+            <h4>Property Location</h4>
             <form className="form-location flex gap30 flex-column">
-              <select className="nice-select" tabIndex={0}>
-                <option data-value className="option selected">
-                  1
-                </option>
-                <option data-value="For Ren" className="option">
-                  2
-                </option>
-                <option data-value="Sold" className="option">
-                  3
-                </option>
-              </select>
               <div className="cols">
                 <fieldset className="text">
+                  <label>Locality</label>
                   <input
                     type="text"
-                    placeholder="Friendly Address"
+                    placeholder="Locality"
                     className
                     name="text"
                     tabIndex={2}
@@ -277,12 +339,24 @@ export default function DashboardAddProperties() {
                   />
                 </fieldset>
                 <fieldset className="text">
+                  <label>Name of the road</label>
                   <input
                     type="text"
-                    placeholder="Map Location"
+                    placeholder="Name of the road"
                     className
                     name="text"
                     tabIndex={2}
+                    aria-required="true"
+                    required
+                  />
+                </fieldset>
+                <fieldset className="text">
+                  <label>Track number</label>
+                  <input
+                    type="text"
+                    placeholder="Track number"
+                    className
+                    name="text"
                     aria-required="true"
                     required
                   />
@@ -327,6 +401,76 @@ export default function DashboardAddProperties() {
                   Save &amp; Preview
                   <i className="icon-arrow-right-add" />
                 </button>
+              </div>
+            </form>
+          </div>
+          <div className="wg-box pl-44 mb-20">
+            <h4>Other features of your home</h4>
+            <form>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Built-in wardrobes</p>
+              </div>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Air-conditioning</p>
+              </div>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Terrace</p>
+              </div>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Balcony</p>
+              </div>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Parking space</p>
+              </div>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Storage room</p>
+              </div>
+              <h4 className="my-4">Other features of your building</h4>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Pool</p>
+              </div>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Green zone</p>
+              </div>
+
+              <h4 className="my-4">Does it have an elevator?</h4>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Yes it has</p>
+              </div>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Does not have</p>
+              </div>
+            </form>
+          </div>
+          <div className="wg-box pl-44 mb-20">
+            <h4>Use of the home at the time of signing</h4>
+            <form>
+              <p>In what condition is the property sold?</p>
+              <div className="sold-condition">
+                <input type="checkbox" name="" id="" />
+                <p>Free, with no one living there</p>
+              </div>
+              <div className="sold-condition">
+                <input type="checkbox" name="" id="" />
+                <p>Bare ownership, another person has the usufruct</p>
+              </div>
+              <div className="sold-condition">
+                <input type="checkbox" name="" id="" />
+                <p>Rented, with tenants</p>
+              </div>
+              <div className="sold-condition">
+                <input type="checkbox" name="" id="" />
+                <p>Illegally occupied</p>
               </div>
             </form>
           </div>
@@ -599,116 +743,23 @@ export default function DashboardAddProperties() {
             </form>
           </div>
           <div className="wg-box pl-44">
-            <h4>Floors</h4>
-            <form className="form-floors">
-              <div className="cols cols-two">
-                <fieldset className="text has-top-title">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className
-                    name="text"
-                    tabIndex={2}
-                    aria-required="true"
-                    required
-                  />
-                  <label htmlFor>Name</label>
-                </fieldset>
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    USA
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    Viet Nam
-                  </option>
-                  <option data-value="Sold" className="option">
-                    China
-                  </option>
-                </select>
-              </div>
-              <div className="cols cols-two">
-                <select className="nice-select" tabIndex={0}>
-                  <option data-value className="option selected">
-                    USA
-                  </option>
-                  <option data-value="For Ren" className="option">
-                    Viet Nam
-                  </option>
-                  <option data-value="Sold" className="option">
-                    China
-                  </option>
-                </select>
-                <fieldset className="text has-top-title">
-                  <input
-                    type="text"
-                    placeholder="Size"
-                    className
-                    name="text"
-                    tabIndex={2}
-                    aria-required="true"
-                    required
-                  />
-                  <label htmlFor>Size</label>
-                </fieldset>
-              </div>
-              <fieldset className="description has-top-title">
-                <textarea
-                  name="description"
-                  rows={4}
-                  placeholder="Content"
-                  className
-                  tabIndex={2}
-                  aria-required="true"
-                  required
-                  defaultValue={"Lorem Ipsum Dolar Sit Amet"}
-                />
-                <label htmlFor>Content</label>
-              </fieldset>
-              <div className="upload-image-wrap">
-                <div className="text">Preview Image</div>
-                <div className="list">
-                  <div className="item">
-                    <img src="/images/image-box/upload-1.jpg" alt="" />
-                    <ul className>
-                      <li className="edit-btns">
-                        <i className="flaticon-edit" />
-                      </li>
-                      <li className="delete-btns">
-                        <i className="flaticon-delete" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <img src="/images/image-box/upload-2.jpg" alt="" />
-                    <ul className>
-                      <li className="edit-btns">
-                        <i className="flaticon-edit" />
-                      </li>
-                      <li className="delete-btns">
-                        <i className="flaticon-delete" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <label className="uploadfile">
-                      <input type="file" className name="file" />
-                      <i className="flaticon-gallery" />
-                      <div>Upload</div>
-                    </label>
-                  </div>
-                </div>
-                <p>
-                  Max file size is 1MB, Minimum dimension: 330x300 And Suitable
-                  files are .jpg &amp; .png
-                </p>
-              </div>
-              <div className="button-submit">
-                <button className="tf-button-primary" type="submit">
-                  Save &amp; Preview
-                  <i className="icon-arrow-right-add" />
-                </button>
-              </div>
-            </form>
+            <h4>Floor Features</h4>
+            <div className="feature">
+              <input type="checkbox" name="" id="" />
+              <p>Floor</p>
+            </div>
+            <div className="feature">
+              <input type="checkbox" name="" id="" />
+              <p>Penthouse</p>
+            </div>
+            <div className="feature">
+              <input type="checkbox" name="" id="" />
+              <p>Duplex</p>
+            </div>
+            <div className="feature">
+              <input type="checkbox" name="" id="" />
+              <p>Studio / loft</p>
+            </div>
           </div>
         </div>
       </LayoutAdmin>

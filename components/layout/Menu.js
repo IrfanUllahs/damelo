@@ -76,6 +76,9 @@ export default function Menu() {
             </li>
           </ul>
         </li>
+        <li>
+          <Link href="/dashboard-my-favorites">My Favorite</Link>
+        </li>
       </ul>
     </>
   );

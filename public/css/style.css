@@ -7837,7 +7837,7 @@ ul.grid-tags li a:hover {
   justify-content: center;
   gap: 10px;
   padding: 10px 24px;
-  border: 1px solid var(--Secondary);
+  border: 1px solid var(--buttoncolor);
   border-radius: 120px;
   color: var(--Secondary);
   font-weight: 500;
@@ -7850,7 +7850,7 @@ ul.grid-tags li a:hover {
   transition: all 0.3s ease;
 }
 .tf-button-default:hover {
-  background-color: var(--Secondary);
+  background-color: var(--buttoncolor);
   color: var(--White);
 }
 .tf-button-default.style-white {
@@ -7863,12 +7863,12 @@ ul.grid-tags li a:hover {
 }
 .tf-button-default.style-blue {
   background-color: var(--White);
-  border-color: var(--Fourth);
+  border-color: var(--buttoncolor);
   color: var(--Fourth);
 }
 .tf-button-default.style-blue:hover {
   color: var(--White);
-  background-color: var(--Fourth);
+  background-color: var(--buttoncolor);
 }
 .tf-button-default.style-blue.active {
   color: var(--White);
@@ -12162,7 +12162,7 @@ body::-webkit-scrollbar {
   width: 331px;
   border-radius: 24px;
   padding: 40px;
-  background-color: var(--Fourth);
+  background-color: var(--buttoncolor);
   opacity: 1;
   visibility: visible;
   -webkit-transition: all 0.3s ease;
@@ -12219,7 +12219,7 @@ body::-webkit-scrollbar {
 }
 .layout-wrap .layout-wrap-inner .section-menu-left .menu-content ul li.active,
 .layout-wrap .layout-wrap-inner .section-menu-left .menu-content ul li:hover {
-  background: rgba(255, 255, 255, 0.0509803922);
+  background: rgb(147, 205, 230);
 }
 .layout-wrap .layout-wrap-inner .section-content-right {
   flex-grow: 1;
@@ -16017,6 +16017,7 @@ a {
 .tf-button-bg-custom {
   background-color: #67c2c9;
 }
+/* } // this is the code  */
 @media only screen and (max-width: 700px) {
   .preload-container .middle {
     height: 80%;
@@ -16025,4 +16026,30 @@ a {
     left: 10%;
   }
 }
+.input-group {
+  display: flex;
+}
+.input-group button {
+  background-color: grey;
+}
+/* Responsive styles */
+@media (max-width: 480px) {
+  .input-group input {
+    width: 50px;
+  }
+
+  .input-group button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+/* features css */
+.feature,
+.sold-condition {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
