@@ -51,7 +51,6 @@ export default function LayoutAdmin({
 
           <div className="main-content spacing-20">
             <div className="layout-wrap-inner">
-              <Sidebar />
               <div className="section-content-right">
                 {breadcrumbTitle && (
                   <BreadcrumbAdmin breadcrumbTitle={breadcrumbTitle} />
@@ -60,10 +59,6 @@ export default function LayoutAdmin({
                 <div className="bottom-page">
                   <p>Copyright © 2024. Demelo Real Estate</p>
                 </div>
-              </div>
-              <div className="btn-canvas active">
-                <span />
-                <div className="text-content"> Dashboard Navigation</div>
               </div>
             </div>
           </div>
