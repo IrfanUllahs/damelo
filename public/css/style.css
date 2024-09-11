@@ -7060,7 +7060,6 @@ ul.grid-tags li a:hover {
   justify-content: center;
   gap: 40px;
   margin-left: 197px;
-
 }
 
 #header_main .header-inner .header-inner-wrap .main-menu ul.navigation > li {
@@ -7073,14 +7072,13 @@ ul.grid-tags li a:hover {
   ul.navigation
   > li
   > a {
-    line-height: 100px;
-    font-size: larger;
-    font-weight: bold;
-    color: #050b20;
-    font-weight: 700;
-    padding-left: 15px;
-        /* color: var(--buttoncolor); */
-  
+  line-height: 100px;
+  font-size: larger;
+  font-weight: bold;
+  color: #050b20;
+  font-weight: 700;
+  padding-left: 15px;
+  /* color: var(--buttoncolor); */
 }
 #header_main
   .header-inner
@@ -7344,7 +7342,6 @@ ul.grid-tags li a:hover {
   i {
   font-size: 20px;
   color: var(--Secondary);
-  
 }
 #header_main
   .header-inner
@@ -7356,7 +7353,6 @@ ul.grid-tags li a:hover {
   font-weight: 500;
   line-height: 19px;
   color: var(--Secondary);
-  
 }
 #header_main
   .header-inner
@@ -7374,7 +7370,6 @@ ul.grid-tags li a:hover {
   .icon
   i {
   color: var(--White);
-  
 }
 #header_main
   .header-inner
@@ -7410,16 +7405,15 @@ ul.grid-tags li a:hover {
 }
 #header_main .header-inner .header-inner-wrap .header-right .header-user i {
   font-size: 18px;
-  color: var( --buttoncolor);
-  font-weight: bold; 
-  
+  color: var(--buttoncolor);
+  font-weight: bold;
 }
 #header_main
   .header-inner
   .header-inner-wrap
   .header-right
   .header-user.style-white {
-  border-color: var( --buttoncolor);
+  border-color: var(--buttoncolor);
 }
 #header_main
   .header-inner
@@ -7435,9 +7429,8 @@ ul.grid-tags li a:hover {
   .header-inner-wrap
   .header-right
   .header-user.style-blue {
-  border-color: var( --buttoncolor);
+  border-color: var(--buttoncolor);
   background-color: white;
-  
 }
 #header_main
   .header-inner
@@ -7457,16 +7450,30 @@ ul.grid-tags li a:hover {
   border-color: var(--buttoncolor);
 }
 
-#header_main .header-inner .header-inner-wrap .header-right .header-user:hover i {
+#header_main
+  .header-inner
+  .header-inner-wrap
+  .header-right
+  .header-user:hover
+  i {
   color: var(--White);
 }
 
-#header_main .header-inner .header-inner-wrap .header-right .header-user.style-blue:hover {
+#header_main
+  .header-inner
+  .header-inner-wrap
+  .header-right
+  .header-user.style-blue:hover {
   background-color: var(--buttoncolor);
   border-color: var(--buttoncolor);
 }
 
-#header_main .header-inner .header-inner-wrap .header-right .header-user.style-blue:hover i {
+#header_main
+  .header-inner
+  .header-inner-wrap
+  .header-right
+  .header-user.style-blue:hover
+  i {
   color: var(--White);
 }
 
@@ -12263,7 +12270,7 @@ body::-webkit-scrollbar {
 }
 .layout-wrap .layout-wrap-inner .section-content-right {
   flex-grow: 1;
-  padding-left: 371px;
+  /* padding-left: 371px; */
   padding-top: 121px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -15021,7 +15028,7 @@ a {
     text-align: center;
   }
   form {
-    z-index: 40 !important;
+    /* z-index: 40 !important; */
     flex-wrap: wrap;
     align-items: center !important;
   }
@@ -16137,7 +16144,7 @@ label {
 
 .radio-group input[type="radio"] {
   margin-right: 10px;
-  accent-color: #39db4a; /* Accent color for radio buttons */
+  accent-color: var(--buttoncolor); /* Accent color for radio buttons */
 }
 
 /* Styling the form section */
@@ -16225,14 +16232,14 @@ label {
   min-height: 100vh;
   border: 2px solid red;
   max-width: 1400px;
-  padding: 0 14px;
+  padding: 0 40px;
   margin: 0 auto;
   padding-top: 120px;
 }
 .search-contents {
   height: 100%;
   width: 100%;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 .search-contents h3 {
   margin-bottom: 30px;
@@ -16246,13 +16253,70 @@ label {
 }
 .rightSection {
   flex: 3;
-  border: 2px solid wheat;
+}
+.propertyType {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.links h6:hover {
+  color: #9a4460;
+}
+.filters {
+  display: flex;
+  align-items: center;
+  /* margin-top: 100px; */
+}
+.filters span {
+  font-size: 16px;
+}
+
+.filter {
+  background-color: #4d4d4c;
+  color: white;
+  padding: 5px 8px;
+  border: 1px solid #4d4d4c;
+}
+#select {
+  padding: 9px 8px;
+  font-size: 15px;
+  background-color: #e5e6e1;
+  border: 1px solid #4d4d4c;
+  outline: none;
+  border-radius: 0;
+}
+.filters p:not(:first-of-type) {
+  border: 1px solid #4d4d4c;
+  background-color: #e5e6e1;
+  padding: 5px 8px;
+}
+.filters span {
+  margin: 0 10px;
+  font-size: 18px;
 }
 .cardContents {
   display: flex;
+  gap: 10px;
+  margin: 50px 0;
 }
 .cardImage {
-  flex: 2;
+  /* flex: 2; */
+  width: 400px;
+  position: relative;
+}
+.cardImage .mediaLinks {
+  position: absolute;
+  top: 210px;
+  left: 10px;
+}
+.cardImage .mediaLinks p {
+  color: var(--buttoncolor);
 }
 .cardInfo {
   flex: 3;
@@ -16260,8 +16324,82 @@ label {
   flex-direction: column;
   gap: 15px;
 }
+.cardInfo h6 {
+  color: rgb(75, 75, 242);
+}
+.cardInfo h6:hover {
+  color: rgb(33, 33, 162);
+  cursor: pointer;
+}
+.bedAndarea p {
+  font-size: 16px;
+  color: rgb(61, 59, 59);
+}
+.property-price h6 {
+  text-decoration: line-through;
+  color: rgb(235, 32, 32);
+}
+.desc {
+  color: #4d4d4c;
+  margin-top: 20px;
+}
+
 @media (max-width: 992px) {
   .search {
     padding-top: 150px;
   }
+}
+@media (max-width: 991px) {
+  .leftSection {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .filters :nth-child(4) {
+    display: none;
+  }
+  .cardContents {
+    flex-direction: column;
+  }
+  .cardImage {
+    width: 800;
+  }
+  .links {
+    display: none;
+  }
+  #select {
+    width: 30px;
+  }
+}
+.searchFilter h6 {
+  margin: 20px 0;
+}
+.searchFilter label {
+  font-weight: 400;
+}
+.filterForm {
+  /* position: relative; */
+  z-index: 999;
+}
+.orderForm {
+  /* position: relative; */
+  z-index: 5;
+}
+.profile-icon {
+  font-size: 20px;
+  color: white;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: red;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 30px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
 }
