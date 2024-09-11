@@ -78,7 +78,7 @@ export default function DashboardAddProperties() {
               </fieldset>
               <div className="button-submit mt-10">
                 <button className="tf-button-primary" type="submit">
-                  Save &amp; Preview
+                  tf-button-primary Save &amp; Preview
                   <i className="icon-arrow-right-add" />
                 </button>
               </div>
@@ -214,7 +214,7 @@ export default function DashboardAddProperties() {
                   <h4>Number of rooms in the house</h4>
                   <div className="input-group">
                     <button>-</button>
-                    <input type="text" value="1" />
+                    <input value="1" />
                     <button>+</button>
                   </div>
                 </div>
@@ -223,7 +223,7 @@ export default function DashboardAddProperties() {
                   <h4>Number of bathrooms and toilets</h4>
                   <div className="input-group">
                     <button>-</button>
-                    <input type="text" value="1" />
+                    <input value="1" />
                     <button>+</button>
                   </div>
                 </div>
@@ -475,7 +475,7 @@ export default function DashboardAddProperties() {
             </form>
           </div>
           <div className="wg-box pl-44 mb-20">
-            <h4>Media</h4>
+            <h4>Add Photos and Videos to your Ad</h4>
             <form className="form-media">
               <div className="upload-image-wrap">
                 <div className="text">Featured Image</div>
@@ -515,82 +515,7 @@ export default function DashboardAddProperties() {
                   files are .jpg &amp; .png
                 </p>
               </div>
-              <div className="upload-image-wrap">
-                <div className="text">Gallery</div>
-                <div className="list">
-                  <div className="item">
-                    <img src="/images/image-box/upload-1.jpg" alt="" />
-                    <ul className>
-                      <li className="edit-btns">
-                        <i className="flaticon-edit" />
-                      </li>
-                      <li className="delete-btns">
-                        <i className="flaticon-delete" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <img src="/images/image-box/upload-2.jpg" alt="" />
-                    <ul className>
-                      <li className="edit-btns">
-                        <i className="flaticon-edit" />
-                      </li>
-                      <li className="delete-btns">
-                        <i className="flaticon-delete" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <label className="uploadfile">
-                      <input type="file" className name="file" />
-                      <i className="flaticon-gallery" />
-                      <div>Upload</div>
-                    </label>
-                  </div>
-                </div>
-                <p>
-                  Max file size is 1MB, Minimum dimension: 330x300 And Suitable
-                  files are .jpg &amp; .png
-                </p>
-              </div>
-              <div className="upload-image-wrap">
-                <div className="text">Attachments</div>
-                <div className="list">
-                  <div className="item">
-                    <img src="/images/image-box/upload-1.jpg" alt="" />
-                    <ul className>
-                      <li className="edit-btns">
-                        <i className="flaticon-edit" />
-                      </li>
-                      <li className="delete-btns">
-                        <i className="flaticon-delete" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <img src="/images/image-box/upload-2.jpg" alt="" />
-                    <ul className>
-                      <li className="edit-btns">
-                        <i className="flaticon-edit" />
-                      </li>
-                      <li className="delete-btns">
-                        <i className="flaticon-delete" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="item">
-                    <label className="uploadfile">
-                      <input type="file" className name="file" />
-                      <i className="flaticon-gallery" />
-                      <div>Upload</div>
-                    </label>
-                  </div>
-                </div>
-                <p>
-                  Max file size is 1MB, Minimum dimension: 330x300 And Suitable
-                  files are .jpg &amp; .png
-                </p>
-              </div>
+
               <fieldset className="text has-top-title">
                 <input
                   type="text"

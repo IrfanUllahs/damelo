@@ -1,5 +1,8 @@
+"use client";
 import Link from "next/link";
 import Menu from "../Menu";
+import ProfileMenu from "@/components/profileMenu/profileMenu";
+import { useState } from "react";
 export default function Header11({
   scroll,
   isMobileMenu,
@@ -9,6 +12,15 @@ export default function Header11({
   isRegister,
   handleRegister,
 }) {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <>
       <header
@@ -31,12 +43,6 @@ export default function Header11({
               <Menu />
             </nav>
             <div className="header-right gap30">
-              <div onClick={handleLogin} className="header-user-login">
-                <div className="image">
-                  <img src="/images/author/author-6.png" alt="" />
-                </div>
-                <div className="name">Ali Tufan</div>
-              </div>
               <div className="header-btn">
                 <Link
                   href="/dashboard-add-properties"
@@ -45,12 +51,22 @@ export default function Header11({
                   Add Listing
                 </Link>
               </div>
+              <div
+                onClick={handleClick}
+                className="header-user-login cursor-pointer"
+              >
+                <div className="image">
+                  <img src="/images/author/author-6.png" alt="" />
+                </div>
+                <div className="name">Ali Tufan</div>
+              </div>
             </div>
             <a
               className="mobile-nav-toggler mobile-button"
               onClick={handleMobileMenu}
             />
           </div>
+          <ProfileMenu anchorEl={anchorEl} open={open} onClose={handleClose} />
         </div>
       </header>
     </>
