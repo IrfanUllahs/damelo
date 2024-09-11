@@ -6,6 +6,7 @@
   --Third: #eb664e;
   --Fourth: #291f4b;
   --buttoncolor: #67c2c9;
+  --buttonhover: #abe6eb;
   --Border: #ebebeb;
   --roboto: $font-main-family;
   --dm: $font-secondary;
@@ -2389,8 +2390,8 @@ ul.list-text li::before {
   color: var(--White);
 }
 .list-tags .tags-item.featured {
-  background-color: var(--Primary);
-  color: var(--Secondary);
+  background-color: var(--buttoncolor);
+  color: var(--White);
 }
 .list-tags.type-1 {
   top: 30px;
@@ -3578,6 +3579,8 @@ ul.grid-tags li a:hover {
 .ft-download.bg-fourth li a .app div:last-child {
   color: var(--White);
 }
+
+/* above code is download button */
 
 .download-app {
   display: -webkit-box;
@@ -6445,7 +6448,22 @@ ul.grid-tags li a:hover {
   border-radius: 12px;
   color: var(--White);
   background-color: var(--buttoncolor);
+  transition: background-color 0.3s ease;
 }
+
+.slider.home8
+  .wrap-slider
+  .slider-item
+  .slider-content
+  .widget-tabs
+  .form-search-home6
+  .button-submit
+  button:hover {
+  background-color: #abe6eb;
+}
+
+/* the above code is search button whiich i apply hover */
+
 .slider.home8 .wrap-slider .counter {
   position: absolute;
   bottom: 0;
@@ -6960,6 +6978,11 @@ ul.grid-tags li a:hover {
   transition: all 300ms linear;
   background: #67c2c9;
 }
+
+.progress-wrap:hover {
+  background-color: var(--buttonhover, #abe6eb);
+}
+
 .progress-wrap::after {
   position: absolute;
   content: "\ea3a";
@@ -6979,6 +7002,7 @@ ul.grid-tags li a:hover {
   -o-transition: all 400ms linear;
   transition: all 400ms linear;
 }
+
 .progress-wrap.active-progress {
   opacity: 1;
   visibility: visible;
@@ -6986,9 +7010,11 @@ ul.grid-tags li a:hover {
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
+
 .progress-wrap svg path {
   fill: none;
 }
+
 .progress-wrap svg.progress-circle path {
   box-sizing: border-box;
   stroke: var(--Primary);
@@ -7009,6 +7035,7 @@ ul.grid-tags li a:hover {
   width: 100%;
   background-color: #fff;
 }
+
 .preload-container .middle {
   top: 20%;
   left: 25%;
@@ -7021,6 +7048,8 @@ ul.grid-tags li a:hover {
   content: url(./../images/logo/logo.png);
   animation: preload 1.2s linear infinite alternate;
 }
+
+/* the above code is BackToTop button code i add the hover  */
 
 #header_main {
   position: relative;
@@ -7057,10 +7086,12 @@ ul.grid-tags li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   margin-left: 197px;
 
 }
+
+/* Home,property css */
 
 #header_main .header-inner .header-inner-wrap .main-menu ul.navigation > li {
   position: relative;
@@ -7077,7 +7108,8 @@ ul.grid-tags li a:hover {
     font-weight: bold;
     color: #050b20;
     font-weight: 700;
-    padding-left: 15px;
+    padding: 15px;
+    
         /* color: var(--buttoncolor); */
   
 }
@@ -7876,7 +7908,7 @@ ul.grid-tags li a:hover {
   justify-content: center;
   gap: 10px;
   padding: 10px 24px;
-  border: 1px solid var(--buttoncolor);
+  border: 2px solid var(--buttoncolor);
   border-radius: 120px;
   color: var(--Secondary);
   font-weight: 500;
@@ -8073,7 +8105,7 @@ ul.grid-tags li a:hover {
 }
 .tf-button-primary.style-black.active,
 .tf-button-primary.style-black:hover {
-  background-color: var(--Fourth);
+  background-color: var(--buttonhover);
 }
 .tf-button-primary.type-1 {
   padding: 17px 26px;
@@ -9359,7 +9391,21 @@ body::-webkit-scrollbar {
   button {
   background-color: var(--buttoncolor);
   color: var(--White);
+  transition: background-color 0.3s ease;
 }
+
+.footer.bg-white
+  .footer-inner
+  .footer-inner-wrap
+  .center-footer
+  form
+  .button-submit
+  button:hover {
+  background-color: #abe6eb;
+}
+
+ /* search button on home page i apply hover */
+ 
 .footer.bg-white .footer-inner .footer-inner-wrap .center-footer .icon {
   background-color: var(--Primary);
 }
@@ -12555,6 +12601,7 @@ body::-webkit-scrollbar {
   display: -webkit-flex;
   display: flex;
 }
+
 .widget-tabs.style-5 .widget-menu-tab .item-title {
   padding: 16px 30px;
   font-size: 17px;
@@ -12569,16 +12616,26 @@ body::-webkit-scrollbar {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
+.widget-tabs.style-5 .widget-menu-tab .item-title:hover {
+  background-color: #abe6eb;
+}
+
 .widget-tabs.style-5 .widget-menu-tab .item-title:first-child {
   border-radius: 12px 0px 0px 0px;
 }
+
 .widget-tabs.style-5 .widget-menu-tab .item-title:last-child {
   border-radius: 0px 12px 0px 0px;
 }
+
 .widget-tabs.style-5 .widget-menu-tab .item-title.active {
   background-color: var(--White);
   color: var(--Secondary);
 }
+
+/* the above code i change it apply the hover on buy and rent button */
+
 .widget-tabs.style-row {
   display: -webkit-box;
   display: -moz-box;
