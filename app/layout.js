@@ -11,7 +11,7 @@ import "/public/css/swiper-bundle.min.css";
 import "/public/icon/flaticon_just-home.css";
 import "/public/icon/icomoon/style.css";
 import "/public/css/style.css";
-import { NextUIProvider } from "@nextui-org/react";
+
 const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin"],
@@ -40,14 +40,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <NextUIProvider>
-      <html lang="en">
-        <body
-          className={`${roboto.variable} ${dm.variable} ${jost.variable} body mm-wrapper`}
-        >
-          {children}
-        </body>
-      </html>
-    </NextUIProvider>
+    <html lang="en">
+      <body
+        className={`${roboto.variable} ${dm.variable} ${jost.variable} body mm-wrapper`}
+      >
+        {children}
+      </body>
+    </html>
   );
 }
