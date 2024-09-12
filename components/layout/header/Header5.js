@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Menu from "../Menu";
+import Breadcrumbs from "@/components/CommonBreadcrumbs/CommonBreadcrumbs";
 
 export default function Header5({
   scroll,
@@ -18,6 +19,9 @@ export default function Header5({
           scroll ? "is-fixed is-small" : ""
         }`}
       >
+        <div className="breadcrumb ">
+          <Breadcrumbs />
+        </div>
         <div className="header-inner">
           <div className="header-inner-wrap">
             <div id="site-logo">
@@ -45,6 +49,7 @@ export default function Header5({
                   <i className="flaticon-user" />
                 </div>
               </div>
+
               <div className="header-btn">
                 <Link
                   href="/dashboard-add-properties"
@@ -54,6 +59,7 @@ export default function Header5({
                 </Link>
               </div>
             </div>
+
             <a
               className="mobile-nav-toggler mobile-button"
               onClick={handleMobileMenu}

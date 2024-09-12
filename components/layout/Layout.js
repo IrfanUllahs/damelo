@@ -102,10 +102,6 @@ export default function Layout({
           <div
             className={`main-content ${mainContentCls ? mainContentCls : ""}`}
           >
-            {breadcrumbTitle && (
-              <Breadcrumb breadcrumbTitle={breadcrumbTitle} />
-            )}
-
             {children}
           </div>
           {/* {footerStyle == 1 ? <Footer1 footerCls={footerCls} /> : null} */}

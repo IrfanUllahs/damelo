@@ -971,8 +971,8 @@ a:focus {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 14px;
-  padding-left: 14px;
+  padding-right: 40px;
+  padding-left: 40px;
   width: 1428px;
   max-width: 100%;
 }
@@ -980,10 +980,10 @@ a:focus {
   margin-left: -14px !important;
   margin-right: -14px !important;
 }
-.themesflat-container .row > * {
+/* .themesflat-container .row > * {
   padding-left: 14px !important;
   padding-right: 14px !important;
-}
+} */
 .themesflat-container.full {
   width: 100%;
 }
@@ -1035,6 +1035,7 @@ ul.breadcrumbs {
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
+  background-color: white;
 }
 ul.breadcrumbs li {
   font-weight: 400;
@@ -7576,7 +7577,7 @@ ul.grid-tags li a:hover {
   top: -100%;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  /* z-index: 9999; */
   border: none;
   opacity: 1;
   -webkit-transition: all 0.5s ease;
@@ -9410,8 +9411,8 @@ body::-webkit-scrollbar {
   background-color: #abe6eb;
 }
 
- /* search button on home page i apply hover */
- 
+/* search button on home page i apply hover */
+
 .footer.bg-white .footer-inner .footer-inner-wrap .center-footer .icon {
   background-color: var(--Primary);
 }
@@ -15317,6 +15318,14 @@ a {
   }
 }
 @media (max-width: 767px) {
+  .box-dream .content .location {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+  .icon-box {
+    display: block;
+  }
   .smilar-homes .box-dream {
     margin-bottom: 30px;
   }
@@ -16318,10 +16327,14 @@ label {
 .links {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
+}
+.links h6 {
+  font-size: 14px;
 }
 .links h6:hover {
   color: #9a4460;
+  font-size: 14px;
 }
 .filters {
   display: flex;
@@ -16329,7 +16342,7 @@ label {
   /* margin-top: 100px; */
 }
 .filters span {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .filter {
@@ -16353,7 +16366,7 @@ label {
 }
 .filters span {
   margin: 0 10px;
-  font-size: 18px;
+  font-size: 15px;
 }
 .cardContents {
   display: flex;
@@ -16368,7 +16381,7 @@ label {
 .cardImage .mediaLinks {
   position: absolute;
   top: 210px;
-  left: 10px;
+  left: 30px;
 }
 .cardImage .mediaLinks p {
   color: var(--buttoncolor);
@@ -16404,11 +16417,7 @@ label {
     padding-top: 150px;
   }
 }
-@media (max-width: 991px) {
-  .leftSection {
-    display: none;
-  }
-}
+
 @media (max-width: 768px) {
   .filters :nth-child(4) {
     display: none;
@@ -16424,6 +16433,10 @@ label {
   }
   #select {
     width: 30px;
+  }
+  .searchContainer {
+    flex-direction: column;
+    border: 2px solid red;
   }
 }
 .searchFilter h6 {
@@ -16444,17 +16457,50 @@ label {
   font-size: 20px;
   color: white;
 }
-.swiper-button-next,
-.swiper-button-prev {
-  color: red;
+
+.searchImage,
+.searchContent {
+  flex: 1;
+}
+.searchImage {
+  padding-left: 10px;
+}
+#favCard {
+  margin: 20px 0;
+}
+.favImage {
+  flex: 1;
+  padding-left: 10px;
+}
+.favContent {
+  flex: 2;
+}
+.page-title {
+  padding-left: 30px;
+}
+.breadcrumb {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  display: flex;
+  padding-top: 40px;
+  padding-left: 15px;
+  align-items: center;
+  height: 10px;
+  gap: 10px;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 30px;
+.breadcrumb li {
+  list-style: none;
 }
-
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
-  opacity: 0;
+@media (max-width: 991px) {
+  .leftSection {
+    display: none;
+  }
+  .breadcrumb {
+    top: 40px;
+  }
+  .favImage {
+    padding-left: 0;
+  }
 }

@@ -453,6 +453,19 @@ export default function DashboardAddProperties() {
             </form>
           </div>
           <div className="wg-box pl-44 mb-20">
+            <h4>State</h4>
+            <form>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>To reform</p>
+              </div>
+              <div className="feature">
+                <input type="checkbox" name="" id="" />
+                <p>Good condition</p>
+              </div>
+            </form>
+          </div>
+          <div className="wg-box pl-44 mb-20">
             <h4>Use of the home at the time of signing</h4>
             <form>
               <p>In what condition is the property sold?</p>

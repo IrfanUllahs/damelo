@@ -1,5 +1,4 @@
 import CounterNumber from "../elements/CounterNumber";
-
 export default function Slider8() {
   return (
     <>
@@ -1204,27 +1203,6 @@ export default function Slider8() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="counter">
-            <div className="number-counter">
-              <div className>
-                <CounterNumber count={620} />
-              </div>
-              <p>Awward Winning</p>
-            </div>
-            <div className="number-counter">
-              <div className>
-                <CounterNumber count={2} />
-                K+
-              </div>
-              <p>Happy Customer</p>
-            </div>
-            <div className="number-counter">
-              <div className>
-                <CounterNumber count={500} />+
-              </div>
-              <p>Property Ready</p>
             </div>
           </div>
         </div>

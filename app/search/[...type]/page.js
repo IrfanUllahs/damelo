@@ -1,11 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import SliderBoxDream from "@/components/slider/SliderBoxDream";
 import Breadcrumbs from "@/components/CommonBreadcrumbs/CommonBreadcrumbs";
-import { FaImage } from "react-icons/fa";
-import { IoVideocamOutline } from "react-icons/io5";
-import { FiMapPin } from "react-icons/fi";
 import Link from "next/link";
-import Searchcard from "@/components/searchCard/Searchcard";
 export default function SearchProperties() {
   return (
     <>
@@ -15,10 +11,14 @@ export default function SearchProperties() {
             <div className="row">
               <div className="col-12">
                 <div className="content">
-                  <h3>
-                    400 houses and apartments for rent in Malasaña-Universidad,
-                    Madrid
-                  </h3>
+                  <h2>Real Estate &amp; Homes For Sale</h2>
+                  <ul className="breadcrumbs">
+                    <li>
+                      <Link href="/">Home</Link>
+                    </li>
+                    <li>/</li>
+                    <li>Property List</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -599,9 +599,475 @@ export default function SearchProperties() {
                     </div>
                   </div>
                 </div>
-                <Searchcard />
-                <Searchcard />
-                <Searchcard />
+                <div className="row">
+                  <div className="">
+                    <div className="box-dream has-border wow fadeInUp flex searchContainer">
+                      <div className="searchImage overflow-hidden">
+                        <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
+                          <SliderBoxDream
+                            path="house/property-listing"
+                            start={1}
+                            end={4}
+                          />
+                        </div>
+                      </div>
+                      <div className="searchContent content">
+                        <div className="head">
+                          <div className="title">
+                            <Link href="/property-single-v1">Archer House</Link>
+                          </div>
+                          <div className="price">$815,000</div>
+                        </div>
+                        <div className="location">
+                          <div className="icon">
+                            <i className="flaticon-location" />
+                          </div>
+                          <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                        </div>
+                        <div className="icon-box">
+                          <div className="item">
+                            <i className="flaticon-hotel" />
+                            <p>4 Beds</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-bath-tub" />
+                            <p>3 Baths</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-minus-front" />
+                            <p>2660 Sqft</p>
+                          </div>
+                        </div>
+                        <div className="desc">
+                          <p>
+                            [ENG] AVAILABLE FROM: October. Book online by
+                            clicking on "additional link" under the map. [ESP]
+                            Rentals of less than 1 month ar
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <div className="col-xl-6">
+                    <div
+                      className="box-dream has-border wow fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div className="image-group relative">
+                        <div className="list-tags">
+                          <Link href="/#" className="tags-item for-sell">
+                            FOR SELL
+                          </Link>
+                        </div>
+                        <div className="button-heart">
+                          <i className="flaticon-heart-1" />
+                        </div>
+                        <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
+                          <SliderBoxDream
+                            path="house/property-listing"
+                            start={2}
+                            end={5}
+                          />
+                        </div>
+                      </div>
+                      <div className="content">
+                        <div className="head">
+                          <div className="title">
+                            <Link href="/property-single-v1">
+                              Villa One Hyde Park
+                            </Link>
+                          </div>
+                          <div className="price">$815,000</div>
+                        </div>
+                        <div className="location">
+                          <div className="icon">
+                            <i className="flaticon-location" />
+                          </div>
+                          <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                        </div>
+                        <div className="icon-box">
+                          <div className="item">
+                            <i className="flaticon-hotel" />
+                            <p>4 Beds</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-bath-tub" />
+                            <p>3 Baths</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-minus-front" />
+                            <p>2660 Sqft</p>
+                          </div>
+                        </div>
+                        <div className="desc">
+                          <p>
+                            [ENG] AVAILABLE FROM: October. Book online by
+                            clicking on "additional link" under the map. [ESP]
+                            Rentals of less than 1 month ar
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-6">
+                    <div className="box-dream has-border wow fadeInUp">
+                      <div className="image-group relative">
+                        <div className="list-tags">
+                          <Link href="/#" className="tags-item for-sell">
+                            FOR SELL
+                          </Link>
+                        </div>
+                        <div className="button-heart">
+                          <i className="flaticon-heart-1" />
+                        </div>
+                        <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
+                          <SliderBoxDream
+                            path="house/property-listing"
+                            start={3}
+                            end={6}
+                          />
+                        </div>
+                      </div>
+                      <div className="content">
+                        <div className="head">
+                          <div className="title">
+                            <Link href="/property-single-v1">
+                              Home Pitt Street
+                            </Link>
+                          </div>
+                          <div className="price">$815,000</div>
+                        </div>
+                        <div className="location">
+                          <div className="icon">
+                            <i className="flaticon-location" />
+                          </div>
+                          <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                        </div>
+                        <div className="icon-box">
+                          <div className="item">
+                            <i className="flaticon-hotel" />
+                            <p>4 Beds</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-bath-tub" />
+                            <p>3 Baths</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-minus-front" />
+                            <p>2660 Sqft</p>
+                          </div>
+                        </div>
+                        <div className="desc">
+                          <p>
+                            [ENG] AVAILABLE FROM: October. Book online by
+                            clicking on "additional link" under the map. [ESP]
+                            Rentals of less than 1 month ar
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-6">
+                    <div
+                      className="box-dream has-border wow fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div className="image-group relative">
+                        <div className="list-tags">
+                          <Link href="/#" className="tags-item for-sell">
+                            FOR SELL
+                          </Link>
+                        </div>
+                        <div className="button-heart">
+                          <i className="flaticon-heart-1" />
+                        </div>
+                        <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
+                          <SliderBoxDream
+                            path="house/property-listing"
+                            start={4}
+                            end={7}
+                          />
+                        </div>
+                      </div>
+                      <div className="content">
+                        <div className="head">
+                          <div className="title">
+                            <Link href="/property-single-v1">
+                              Relaxing Villa
+                            </Link>
+                          </div>
+                          <div className="price">$815,000</div>
+                        </div>
+                        <div className="location">
+                          <div className="icon">
+                            <i className="flaticon-location" />
+                          </div>
+                          <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                        </div>
+                        <div className="icon-box">
+                          <div className="item">
+                            <i className="flaticon-hotel" />
+                            <p>4 Beds</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-bath-tub" />
+                            <p>3 Baths</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-minus-front" />
+                            <p>2660 Sqft</p>
+                          </div>
+                        </div>
+                        <div className="desc">
+                          <p>
+                            [ENG] AVAILABLE FROM: October. Book online by
+                            clicking on "additional link" under the map. [ESP]
+                            Rentals of less than 1 month ar
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-6">
+                    <div className="box-dream has-border wow fadeInUp">
+                      <div className="image-group relative">
+                        <div className="list-tags">
+                          <Link href="/#" className="tags-item for-sell">
+                            FOR RENT
+                          </Link>
+                          <Link href="/#" className="tags-item featured">
+                            FEATURED
+                          </Link>
+                        </div>
+                        <div className="button-heart">
+                          <i className="flaticon-heart-1" />
+                        </div>
+                        <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
+                          <SliderBoxDream
+                            path="house/property-listing"
+                            start={5}
+                            end={8}
+                          />
+                        </div>
+                      </div>
+                      <div className="content">
+                        <div className="head">
+                          <div className="title">
+                            <Link href="/property-single-v1">Archer House</Link>
+                          </div>
+                          <div className="price">$815,000</div>
+                        </div>
+                        <div className="location">
+                          <div className="icon">
+                            <i className="flaticon-location" />
+                          </div>
+                          <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                        </div>
+                        <div className="icon-box">
+                          <div className="item">
+                            <i className="flaticon-hotel" />
+                            <p>4 Beds</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-bath-tub" />
+                            <p>3 Baths</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-minus-front" />
+                            <p>2660 Sqft</p>
+                          </div>
+                        </div>
+                        <div className="desc">
+                          <p>
+                            [ENG] AVAILABLE FROM: October. Book online by
+                            clicking on "additional link" under the map. [ESP]
+                            Rentals of less than 1 month ar
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-6">
+                    <div
+                      className="box-dream has-border wow fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div className="image-group relative">
+                        <div className="list-tags">
+                          <Link href="/#" className="tags-item for-sell">
+                            FOR SELL
+                          </Link>
+                        </div>
+                        <div className="button-heart">
+                          <i className="flaticon-heart-1" />
+                        </div>
+                        <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
+                          <SliderBoxDream
+                            path="house/property-listing"
+                            start={6}
+                            end={9}
+                          />
+                        </div>
+                      </div>
+                      <div className="content">
+                        <div className="head">
+                          <div className="title">
+                            <Link href="/property-single-v1">
+                              Villa One Hyde Park
+                            </Link>
+                          </div>
+                          <div className="price">$815,000</div>
+                        </div>
+                        <div className="location">
+                          <div className="icon">
+                            <i className="flaticon-location" />
+                          </div>
+                          <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                        </div>
+                        <div className="icon-box">
+                          <div className="item">
+                            <i className="flaticon-hotel" />
+                            <p>4 Beds</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-bath-tub" />
+                            <p>3 Baths</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-minus-front" />
+                            <p>2660 Sqft</p>
+                          </div>
+                        </div>
+                        <div className="desc">
+                          <p>
+                            [ENG] AVAILABLE FROM: October. Book online by
+                            clicking on "additional link" under the map. [ESP]
+                            Rentals of less than 1 month ar
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-6">
+                    <div className="box-dream has-border wow fadeInUp">
+                      <div className="image-group relative">
+                        <div className="list-tags">
+                          <Link href="/#" className="tags-item for-sell">
+                            FOR SELL
+                          </Link>
+                        </div>
+                        <div className="button-heart">
+                          <i className="flaticon-heart-1" />
+                        </div>
+                        <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
+                          <SliderBoxDream
+                            path="house/property-listing"
+                            start={7}
+                            end={10}
+                          />
+                        </div>
+                      </div>
+                      <div className="content">
+                        <div className="head">
+                          <div className="title">
+                            <Link href="/property-single-v1">
+                              Home Pitt Street
+                            </Link>
+                          </div>
+                          <div className="price">$815,000</div>
+                        </div>
+                        <div className="location">
+                          <div className="icon">
+                            <i className="flaticon-location" />
+                          </div>
+                          <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                        </div>
+                        <div className="icon-box">
+                          <div className="item">
+                            <i className="flaticon-hotel" />
+                            <p>4 Beds</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-bath-tub" />
+                            <p>3 Baths</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-minus-front" />
+                            <p>2660 Sqft</p>
+                          </div>
+                        </div>
+                        <div className="desc">
+                          <p>
+                            [ENG] AVAILABLE FROM: October. Book online by
+                            clicking on "additional link" under the map. [ESP]
+                            Rentals of less than 1 month ar
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-6">
+                    <div
+                      className="box-dream has-border wow fadeInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div className="image-group relative">
+                        <div className="list-tags">
+                          <Link href="/#" className="tags-item for-sell">
+                            FOR SELL
+                          </Link>
+                        </div>
+                        <div className="button-heart">
+                          <i className="flaticon-heart-1" />
+                        </div>
+                        <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
+                          <SliderBoxDream
+                            path="house/property-listing"
+                            start={8}
+                            end={11}
+                          />
+                        </div>
+                      </div>
+                      <div className="content">
+                        <div className="head">
+                          <div className="title">
+                            <Link href="/property-single-v1">
+                              Relaxing Villa
+                            </Link>
+                          </div>
+                          <div className="price">$815,000</div>
+                        </div>
+                        <div className="location">
+                          <div className="icon">
+                            <i className="flaticon-location" />
+                          </div>
+                          <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                        </div>
+                        <div className="icon-box">
+                          <div className="item">
+                            <i className="flaticon-hotel" />
+                            <p>4 Beds</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-bath-tub" />
+                            <p>3 Baths</p>
+                          </div>
+                          <div className="item">
+                            <i className="flaticon-minus-front" />
+                            <p>2660 Sqft</p>
+                          </div>
+                        </div>
+                        <div className="desc">
+                          <p>
+                            [ENG] AVAILABLE FROM: October. Book online by
+                            clicking on "additional link" under the map. [ESP]
+                            Rentals of less than 1 month ar
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> */}
+                </div>
                 <div className="row">
                   <div className="col-12">
                     <ul className="wg-pagination justify-center wow fadeInUp">
