@@ -1035,7 +1035,6 @@ ul.breadcrumbs {
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
-  background-color: white;
 }
 ul.breadcrumbs li {
   font-weight: 400;
@@ -1378,8 +1377,8 @@ ul.wg-social-1 li a {
   width: 20px;
   height: 20px;
   background-color: transparent;
-  border-radius: 6px;
-  border: 1px solid var(--Border);
+
+  border: 1px solid gray;
 }
 .checkbox-item label .btn-checkbox:after {
   content: "\f125";
@@ -5567,7 +5566,7 @@ ul.grid-tags li a:hover {
 }
 
 .flat-title {
-  padding-top: 220px;
+  padding-top: 110px;
   padding-bottom: 94px;
   position: relative;
   z-index: 20;
@@ -7686,6 +7685,7 @@ ul.grid-tags li a:hover {
 #header_main.type-home4.is-fixed.is-small {
   background-color: var(--White);
   border: 1px solid var(--Border);
+  height: 74px;
 }
 #header_main.type-home4.is-fixed.is-small .header-inner .header-inner-wrap {
   background-color: transparent;
@@ -8672,11 +8672,11 @@ form.style-line-bottom {
 }
 form.form-search .button-submit button i {
   font-size: 17px;
-  -webkit-transition: all 0.3s ease;
+  /* -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
 }
 form.form-search .button-submit button:hover i {
   color: var(--Primary);
@@ -15086,7 +15086,7 @@ a {
   form {
     /* z-index: 40 !important; */
     flex-wrap: wrap;
-    align-items: center !important;
+    /* align-items: center !important; */
   }
   form > .list {
     flex-wrap: wrap;
@@ -15183,7 +15183,7 @@ a {
   }
   #header_main.is-fixed.is-small {
     background-color: var(--White);
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 20px;
   }
   #header_main.is-fixed.is-small.style-no-bg {
@@ -16232,10 +16232,13 @@ label {
   .input-group input {
     width: 50px;
   }
+  .text-content {
+    font-size: 14px;
+  }
 
   .input-group button {
     width: 30px;
-    height: 30px;
+
     font-size: 16px;
   }
 }
@@ -16463,7 +16466,26 @@ label {
   flex: 1;
 }
 .searchImage {
+  position: relative;
   padding-left: 10px;
+}
+.searchImage .mediaLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  z-index: 1111;
+}
+.searchImage .mediaLinks p:hover {
+  color: var(--buttoncolor);
+}
+.searchImage .mediaLinks p {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
 }
 #favCard {
   margin: 20px 0;
@@ -16478,17 +16500,6 @@ label {
 .page-title {
   padding-left: 30px;
 }
-.breadcrumb {
-  position: absolute;
-  top: 60px;
-  left: 30px;
-  display: flex;
-  padding-top: 40px;
-  padding-left: 15px;
-  align-items: center;
-  height: 10px;
-  gap: 10px;
-}
 
 .breadcrumb li {
   list-style: none;
@@ -16502,5 +16513,15 @@ label {
   }
   .favImage {
     padding-left: 0;
+  }
+}
+#seasonalCheckBox {
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 400px) {
+  #seasonalCheckBox {
+    width: 50px;
+    height: 50px;
   }
 }

@@ -29,8 +29,10 @@ import Footer3 from "./footer/Footer3";
 import Footer4 from "./footer/Footer4";
 import Footer5 from "./footer/Footer5";
 import Footer6 from "./footer/Footer6";
+import SearchPageHeader from "./header/SearchPageHeader";
+import Breadcrumbs from "../CommonBreadcrumbs/CommonBreadcrumbs";
 
-export default function Layout({
+export default function SearchPageLayout({
   headerStyle,
   footerStyle,
   breadcrumbTitle,
@@ -86,10 +88,12 @@ export default function Layout({
       <FilterBtn />
       <ShowSearch />
       <UpdateProgressBars />
-
+      <div id="breadcrumb">
+        <Breadcrumbs />
+      </div>
       <div id="wrapper">
         <div id="page">
-          <Header5
+          <SearchPageHeader
             scroll={scroll}
             isMobileMenu={isMobileMenu}
             handleMobileMenu={handleMobileMenu}
@@ -104,11 +108,18 @@ export default function Layout({
           >
             {children}
           </div>
-
+          {/* {footerStyle == 1 ? <Footer1 footerCls={footerCls} /> : null} */}
+          {/* {footerStyle == 2 ? <Footer2 footerCls={footerCls} /> : null} */}
+          {/* {footerStyle == 3 ? <Footer3 footerCls={footerCls} /> : null} */}
           {footerStyle == 4 ? <Footer4 footerCls={footerCls} /> : null}
+          {/* {footerStyle == 5 ? <Footer5 footerCls={footerCls} /> : null} */}
+          {/* {footerStyle == 6 ? <Footer6 footerCls={footerCls} /> : null} */}
         </div>
       </div>
-
+      <MobileMenu
+        isMobileMenu={isMobileMenu}
+        handleMobileMenu={handleMobileMenu}
+      />
       <BackToTop target="#top" />
       <LoginPopup
         isLogin={isLogin}

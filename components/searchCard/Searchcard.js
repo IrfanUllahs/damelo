@@ -10,26 +10,26 @@ function Searchcard() {
       <div className="">
         <div className="box-dream has-border wow fadeInUp flex searchContainer ">
           <div className="searchImage overflow-hidden">
+            <div className="mediaLinks">
+              <Link href="/images/23232">
+                <p>
+                  <FaImage />
+                </p>
+              </Link>
+              <Link href="/video/2323">
+                <p>
+                  <IoVideocamOutline />
+                </p>
+              </Link>
+              <Link href="/map/3234">
+                {" "}
+                <p>
+                  <FiMapPin />
+                </p>
+              </Link>
+            </div>{" "}
             <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1 relative">
               <SliderBoxDream path="house/property-listing" start={1} end={4} />
-              <div className="mediaLinks">
-                <Link href="/images/23232">
-                  <p>
-                    <FaImage />
-                  </p>
-                </Link>
-                <Link href="/video/2323">
-                  <p>
-                    <IoVideocamOutline />
-                  </p>
-                </Link>
-                <Link href="/map/3234">
-                  {" "}
-                  <p>
-                    <FiMapPin />
-                  </p>
-                </Link>
-              </div>{" "}
             </div>
           </div>
           <div className="searchContent content">

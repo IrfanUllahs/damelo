@@ -8,12 +8,14 @@ import RegisterPopup from "../elements/RegisterPopup";
 import BreadcrumbAdmin from "./BreadcrumbAdmin";
 import Sidebar from "./Sidebar";
 import Header11 from "./header/Header11";
+import Header5 from "./header/Header5";
 
 export default function LayoutAdmin({
   headerStyle,
   footerStyle,
   breadcrumbTitle,
   children,
+  display,
 }) {
   const [scroll, setScroll] = useState(0);
   // Moblile Menu
@@ -43,7 +45,7 @@ export default function LayoutAdmin({
 
       <div id="wrapper">
         <div id="page" className="layout-wrap background-F9F9F9">
-          <Header11
+          <Header5
             scroll={scroll}
             isMobileMenu={isMobileMenu}
             handleMobileMenu={handleMobileMenu}
@@ -53,7 +55,10 @@ export default function LayoutAdmin({
             <div className="layout-wrap-inner">
               <div className="section-content-right">
                 {breadcrumbTitle && (
-                  <BreadcrumbAdmin breadcrumbTitle={breadcrumbTitle} />
+                  <BreadcrumbAdmin
+                    breadcrumbTitle={breadcrumbTitle}
+                    display={display}
+                  />
                 )}
                 {children}
                 <div className="bottom-page">

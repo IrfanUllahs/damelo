@@ -4,6 +4,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { IoMdArrowDropdown } from "react-icons/io";
 import ProfileMenu from "@/components/profileMenu/profileMenu";
 import { useState } from "react";
+import Breadcrumbs from "@/components/CommonBreadcrumbs/CommonBreadcrumbs";
 export default function Header5() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -18,6 +19,7 @@ export default function Header5() {
     <>
       <nav id="navBar">
         {/* logo section  */}
+
         <div className="logo">
           <Link href="/">
             <img src="/images/logo/logo.png" alt="logo image" />
@@ -29,7 +31,7 @@ export default function Header5() {
         <div className="nav-right">
           <ul>
             <li>
-              <Link href="/dashboard-my-properties">
+              <Link href="/dashboard-add-properties">
                 <p>Your ads</p>
                 <div></div>
               </Link>

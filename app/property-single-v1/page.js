@@ -18,34 +18,6 @@ export default function PropertySingleV() {
         >
           <div className="themesflat-container">
             <div className="row">
-              <div className="col-12">
-                <div className="flex items-center justify-between gap30 flex-wrap pt-30 pb-30 ">
-                  <ul className="breadcrumbs style-1 justify-start">
-                    <li>
-                      <Link href="/">Home</Link>
-                    </li>
-                    <li>/</li>
-                    <li>Property List</li>
-                    <li>/</li>
-                    <li>Renovated Apartment</li>
-                  </ul>
-                  <div className="list-icons-page">
-                    <div className="item">
-                      <div className="icon">
-                        <i className="flaticon-heart" />
-                      </div>
-                      <p>Save</p>
-                    </div>
-
-                    <div className="item">
-                      <div className="icon">
-                        <i className="flaticon-outbox" />
-                      </div>
-                      <p>Share</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div className="imageBox">
                 {" "}
                 <Link href="/images/43434">

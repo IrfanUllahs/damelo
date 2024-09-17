@@ -6,10 +6,11 @@ import { IoVideocamOutline } from "react-icons/io5";
 import { FiMapPin } from "react-icons/fi";
 import Link from "next/link";
 import Searchcard from "@/components/searchCard/Searchcard";
+import SearchPageLayout from "@/components/layout/SearchPageLayout";
 export default function SearchProperties() {
   return (
     <>
-      <Layout headerStyle={12} footerStyle={1}>
+      <SearchPageLayout headerStyle={12} footerStyle={1}>
         <div className="flat-title  ">
           <div className="themesflat-container full">
             <div className="row">
@@ -276,7 +277,7 @@ export default function SearchProperties() {
                     href="/#"
                     className="tf-button-primary w-full wow fadeInUp"
                   >
-                    Search Property
+                    Apply filter
                     <i className="icon-arrow-right-add" />
                   </Link>
                 </form>
@@ -573,7 +574,7 @@ export default function SearchProperties() {
                         <div className="links">
                           <h6>Buy</h6>
                           <h6>Rent</h6>
-                          <h6>New Construction</h6>
+                          <h6>Share</h6>
                         </div>
                         <div className="filters">
                           <span>Order: </span>
@@ -640,7 +641,7 @@ export default function SearchProperties() {
             </div>
           </div>
         </div>
-      </Layout>
+      </SearchPageLayout>
     </>
   );
 }

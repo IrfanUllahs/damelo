@@ -11,7 +11,7 @@ import "/public/css/swiper-bundle.min.css";
 import "/public/icon/flaticon_just-home.css";
 import "/public/icon/icomoon/style.css";
 import "/public/css/style.css";
-
+import "./global.css";
 const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin"],

@@ -1,0 +1,117 @@
+:root {
+  --White: #fff;
+  --Text: #3d3e3f;
+  --Primary: #67c2c9;
+  --Secondary: #1a1a1a;
+  --Third: #eb664e;
+  --Fourth: #291f4b;
+  --buttoncolor: #67c2c9;
+  --buttonhover: #abe6eb;
+  --Border: #ebebeb;
+  --roboto: $font-main-family;
+  --dm: $font-secondary;
+  --jost: $jost;
+}
+#navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  overflow: hidden;
+  padding-right: 30px;
+  border: 1px solid rgb(193, 190, 190);
+  background-color: rgb(241, 237, 237);
+}
+#navBar img {
+  width: 120px;
+  object-position: center;
+  object-fit: contain;
+}
+.nav-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-right ul {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  height: 100%;
+}
+.nav-right Link {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.nav-right li {
+  position: relative;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  height: 100%;
+  cursor: pointer;
+}
+.nav-right li div {
+  position: absolute;
+  bottom: 0px;
+  left: -100%;
+  height: 3px;
+  width: 100%;
+  background-color: #b62682;
+}
+.nav-right li:hover div {
+  left: 0;
+  transition: 500ms all ease;
+}
+.account {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#breadcrumb {
+  position: fixed;
+  z-index: 999;
+  top: 60px;
+  left: 30px;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  height: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.add-New {
+  background-color: var(--buttoncolor);
+  color: white;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.add-New:hover {
+  background-color: var(--buttonhover);
+}
+@media only screen and (max-width: 600px) {
+  .nav-right ul > *:not(:last-child) {
+    display: none;
+  }
+  #phoneRadio {
+    width: 30px;
+    height: 30px;
+  }
+  .add-New {
+    font-size: 12px;
+  }
+}
